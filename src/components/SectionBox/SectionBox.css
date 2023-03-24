@@ -1,0 +1,82 @@
+.section-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-right: 3em;
+    padding-left: 20px;
+    font-size: 50px;
+    width: 100%;
+}
+
+.section-box .box {
+    display: flex;
+    flex-direction: column;
+    min-height: 82%;
+    width: 100%;
+    max-width: 1300px;
+    background-color: var(--background-box);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-gray-stroke);
+}
+
+.section-box .box .box__title {
+    display: flex;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.section-box .box .box__title h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-blue);
+    margin: 0;
+    padding: 0;
+}
+
+.section-box .box .box__body {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 980px;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.section-box .box .box__body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+
+.section-box .box .box__body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+
+.section-box .box .box__body::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid var(--color-gray-stroke);  /* creates padding around scroll thumb */
+}
+
+/* .box__body::-webkit-scrollbar {
+    display: none;
+} */
+
+@media screen and (max-width: 768px) {
+    .section-box {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        box-sizing: border-box;
+        padding-right: 20px;
+        font-size: 50px;
+        width: 100%;
+    }
+}
