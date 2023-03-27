@@ -50,7 +50,7 @@ function Sidebar() {
                     }
                     onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
                 >
-                    <FontAwesomeIcon icon={faUser} size='2x' />
+                    <FontAwesomeIcon className='icon' icon={faUser} size='2x' />
                 </a>
             </li>
 
@@ -63,7 +63,7 @@ function Sidebar() {
                         url == 'graduation' ? 'active' : '' }
                     onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
                 >
-                    <FontAwesomeIcon icon={faGraduationCap} size='2x' />
+                    <FontAwesomeIcon className='icon' icon={faGraduationCap} size='2x' />
                 </a>
             </li>
 
@@ -74,7 +74,7 @@ function Sidebar() {
                     className={active == 'skill' || url == 'skill' ? 'active' : '' }
                     onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
                 >
-                    <FontAwesomeIcon icon={faScrewdriverWrench} size='2x' />
+                    <FontAwesomeIcon className='icon' icon={faScrewdriverWrench} size='2x' />
                 </a>
             </li>
 
@@ -85,7 +85,7 @@ function Sidebar() {
                     className={active == 'project' || url == 'project' ? 'active' : '' }
                     onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
                 >
-                    <FontAwesomeIcon icon={faLaptopCode} size='2x' />
+                    <FontAwesomeIcon className='icon' icon={faLaptopCode} size='2x' />
                 </a>
             </li>
 
@@ -96,7 +96,7 @@ function Sidebar() {
                     className={active == 'works' || url == 'works' ? 'active' : '' }
                     onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
                 >
-                    <FontAwesomeIcon icon={faBriefcase} size='2x' />
+                    <FontAwesomeIcon className='icon' icon={faBriefcase} size='2x' />
                 </a>
             </li>
         </ul>
