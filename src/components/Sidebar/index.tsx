@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Dispatch, SetStateAction, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
     faUser,
@@ -9,17 +9,24 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import './Sidebar.css'
 
-function Sidebar() {
+function Sidebar({ setPosition }: { setPosition: Dispatch<SetStateAction<number>> }) {
   const [active, setActive] = useState('')
   const url = window.location.hash.substring(1)
 
   function locationPath(path: string) {
+    const heightPage = document.getElementById('home')?.getBoundingClientRect().height || 0
+
+    const pages = ['home', 'graduation', 'skill', 'project', 'works']
+
     setActive(path)
     window.location.hash = path
+
+    setPosition(heightPage * pages.indexOf(path))
   }
 
   useState(() => {
     function scrollPosition(){
+        
         const position = window.pageYOffset
         const heightPage = document.getElementById('home')?.getBoundingClientRect().height || 0
 
@@ -35,6 +42,9 @@ function Sidebar() {
     window.addEventListener('scroll', scrollPosition)
   })
 
+  function pagePossition(){
+
+  }
   return (
     <nav className='sidebar'>
 
@@ -71,7 +81,10 @@ function Sidebar() {
 
             <li>
                 <a href="#skill"
-                    className={active == 'skill' || url == 'skill' ? 'active' : '' }
+                    className={
+                        active == 'skill' || 
+                        url == 'skill' ? 'active' : '' 
+                    }
                     onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
                 >
                     <FontAwesomeIcon className='icon' icon={faScrewdriverWrench} size='2x' />

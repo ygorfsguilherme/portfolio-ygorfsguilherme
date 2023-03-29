@@ -8,8 +8,6 @@ import {
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-import perfilImage from '/images/profileImage.png'
-
 function About() {
     const [data, setData] = useState({about: {
         name: '',
@@ -17,6 +15,11 @@ function About() {
         quota: {
             text: '',
             author: '',
+        },
+        redeSocial: {
+            linkedin: '',
+            discord: '',
+            github: '',
         }
     }})
 
@@ -31,18 +34,18 @@ function About() {
   return (
     <div className='home'>
         <div className='profile'>
-            <img src={ perfilImage } alt="image perfil" />
+            <img src="/images/profileImage.jpg" alt="image perfil" />
 
             <div className='rede_social'>
-                <a className='rede_social__link' href="#">
+                <a className='rede_social__link' href={data.about.redeSocial.linkedin}>
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
 
-                <a className='rede_social__link' href="#">
+                <a className='rede_social__link' href={data.about.redeSocial.discord}>
                     <FontAwesomeIcon icon={faDiscord} />
                 </a>
 
-                <a className='rede_social__link' href="#">
+                <a className='rede_social__link' href={data.about.redeSocial.github}>
                     <FontAwesomeIcon icon={faGithubAlt} />
                 </a>
             </div>

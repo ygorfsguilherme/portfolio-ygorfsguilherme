@@ -1,0 +1,7 @@
+.projects {
+  display: grid;
+  width: 100%;
+  padding-top: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+  gap: 8px;
+}

@@ -1,0 +1,29 @@
+.card_work {
+    border-radius: 10px;
+    background-color: var(--color-dark-blue);
+    height: 265px;
+    width: 320px;
+    font-size: 0.9rem;
+    padding: 12px;
+}
+
+.card_work h1 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.card_work h1 img {
+    margin-right: 10px;
+}
+
+.card_work time {
+    color: var(--color-gray-75);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card_work p {
+    margin-top: 10px;
+}

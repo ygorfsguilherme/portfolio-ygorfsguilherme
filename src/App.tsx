@@ -1,12 +1,28 @@
+import { useState } from 'react'
+import styled from 'styled-components'
 import './App.css'
 import './assets/css/_color.css'
 import About from './components/About'
+import Projects from './components/Projects'
 import SectionBox from './components/SectionBox'
 import Sidebar from './components/Sidebar'
+import SKills from './components/Skills'
+import Works from './components/Works'
 
 function App() {
+  const [position, setPosition] = useState(0)
+
+  const AppContainer = styled.div`
+    position: position;
+
+    @media (max-width: 768px) {
+      position: fixed;
+      top: -${position}px;
+      width: 100%;
+    }
+  `
   return (
-    <>
+    <AppContainer>
       <SectionBox title='Sobre' id='home'>
         <About/>
       </SectionBox>
@@ -16,20 +32,22 @@ function App() {
       </SectionBox>
 
       <SectionBox title='Habilidades' id='skill'>
-        <h1>Habilidades</h1>
+        <SKills/>
       </SectionBox>
 
       <SectionBox title='Projetos' id='project'>
-        <h1>Projetos</h1>
+        <Projects />
       </SectionBox>
 
       <SectionBox title='Experiência' id='works'>
-        <h1>Experiência</h1>
+        <Works/>
       </SectionBox>
 
-      <Sidebar />
-    </>
+      <Sidebar setPosition={setPosition} />
+    </AppContainer>
   )
 }
+
+
 
 export default App
