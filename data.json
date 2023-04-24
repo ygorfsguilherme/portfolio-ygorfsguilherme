@@ -1,0 +1,108 @@
+{
+    "about":{
+        "name": "Ygor Guilherme",
+        "description": "Atualmente, sou estudante de Ciência da Computação na Faculdade Estácio de Sá e possuo experiência no programa de aprendizado ONE - Oracle Next Education e Alura. Após concluir o programa, fui convidado a atuar como ONEHelper na comunidade da Turma 3, onde auxiliei motivando e passando conhecimentos no aprendizado dos alunos. Meus conhecimentos estão voltados para a área de desenvolvimento de software, com ênfase no desenvolvimento web. Possuo experiência em tecnologias como Java, Spring Boot, React, HTML, CSS, JavaScript, TypeScript, MySQL, Git, Gitflow, GitHub, Docker, entre outras.",
+        "quota": {
+            "text": "Qualquer um pode escrever um código que o computador entenda. Bons programadores escrevem códigos que os humanos entendam.",
+            "author": "Martin Fowler"
+        },
+
+        "redeSocial": {
+            "linkedin": "https://www.linkedin.com/in/ygorfsguilherme/",
+            "discord": "https://discordapp.com/users/Ygor%20Guilherme#3911",
+            "github": "https://github.com/ygorfsguilherme"
+        }
+    },
+
+    "skills": [
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
+    ],
+
+    "works": [
+        {
+            "enterprise": "Alura - Comunidade ONE",
+            "positionHeld": "ONEHelper",
+            "dateStart": "07/2022",
+            "dateEnd": "10/2022",
+            "description": "ONE Helper na comunidade ONE - Oracle Next Education e Alura, no âmbito de ajudar, motiva e passar o conhecimento voltado à área de programação.",
+            "imageIcon": "/images/alura_logo.png"
+        },
+        {
+            "enterprise": "Mais1Code",
+            "positionHeld": "Instrutor Voluntário",
+            "dateStart": "02/2023",
+            "dateEnd": "Atualmente",
+            "description": "Instruindo no conhecimento de programação em lógica de programação, front end e back end",
+            "imageIcon": "/images/mais1code_logo.png"
+        }
+    ],
+
+    "projects": [
+        {
+          "image":
+            "https://github.com/ygorfsguilherme/RepoImageProjects/blob/main/portfolio/project/project-criptdex-min.png?raw=true",
+          "title": "Criptdex",
+          "description":
+            "É um codificador de texto, a sua utilização é fazer com que frases seja indecifrável.",
+          "github_link": "https://github.com/ygorfsguilherme/criptdex",
+          "view_app": "https://ygorfsguilherme.github.io/criptdex/"
+        },
+      
+        {
+          "image":
+            "https://github.com/ygorfsguilherme/RepoImageProjects/blob/main/portfolio/project/project-jogo-da-forca-min.png?raw=true",
+          "title": "Jogo da forca",
+          "description":
+            "Um simples jogo da forca, onde você pode tentar adivinhar uma palavra.",
+          "github_link": "https://github.com/ygorfsguilherme/jogo-da-forca",
+          "view_app": "https://ygorfsguilherme.github.io/jogo-da-forca/"
+        },      
+        {
+          "image":
+            "https://github.com/ygorfsguilherme/RepoImageProjects/blob/main/portfolio/project/project-pyformail-min.png?raw=true",
+          "title": "Pyformail",
+          "description":
+            "Uma api que envia informações de um formulario para um email, criado para envia informações de contato.",
+          "github_link": "https://github.com/ygorfsguilherme/api-pyformail",
+          "view_app": "https://github.com/ygorfsguilherme/api-pyformail"
+        },
+        {
+          "image":
+            "https://github.com/ygorfsguilherme/RepoImageProjects/blob/main/portfolio/project/project-alura-geek-min.png?raw=true",
+          "title": "Alura Geek",
+          "description": "Um e-commerce que une uma gama de itens da cultura geek.",
+          "github_link": "https://github.com/ygorfsguilherme/alura-geek",
+          "view_app": "https://ygorfsguilherme.github.io/alura-geek/"
+        },
+        {
+          "image":
+            "https://github.com/ygorfsguilherme/RepoImageProjects/blob/main/portfolio/project/project-gmoney-min.png?raw=true",
+          "title": "GMoney - Conversor",
+          "description":
+            "É um conversor de moeda sendo possivel converter para alguns tipos de moeda como dólar e real.",
+          "github_link": "https://github.com/ygorfsguilherme/gmoney-conversor",
+          "view_app": "https://github.com/ygorfsguilherme/gmoney-conversor"
+        },
+        {
+          "image":
+            "https://github.com/ygorfsguilherme/RepoImageProjects/blob/main/portfolio/project/project-alura-hotel-min.png?raw=true",
+          "title": "Alura Hotel",
+          "description":
+            "É um aplicação para gerenciar cadastro de clientes do Alura Hotel.",
+          "github_link": "https://github.com/ygorfsguilherme/AluraHotel",
+          "view_app": "https://github.com/ygorfsguilherme/AluraHotel"
+        }
+      ]
+}

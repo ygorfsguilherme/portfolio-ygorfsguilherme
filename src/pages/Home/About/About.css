@@ -1,0 +1,29 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 8%;
+    animation: moveLeftCenter 1s ease-in-out;
+}
+
+.about blockquote {
+    margin-top: 20px;
+    animation: moveLeftCenter 1.5s ease-in-out;
+}
+
+.about blockquote cite {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.about blockquote cite::after {
+    content: " _";
+    animation: pulse 1s infinite;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding-right: 0;
+    }
+}

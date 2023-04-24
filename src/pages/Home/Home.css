@@ -1,0 +1,15 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 100%;
+    flex-direction: row-reverse;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        display: block;
+    }
+}

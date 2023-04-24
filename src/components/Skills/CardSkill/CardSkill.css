@@ -1,0 +1,15 @@
+.card_skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 4px 0px rgb(0, 0, 0, 0.25);
+    background-color: var(--color-dark-blue);
+}
+
+.card_skill img {
+    height: 65px;
+}
+
