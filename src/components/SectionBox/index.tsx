@@ -1,16 +1,23 @@
 import React from 'react'
 import './SectionBox.css'
 
-function SectionBox(Props: {children: React.ReactNode, id?: string, title?: string}){
+interface Props{
+  children: React.ReactNode,
+  id?: string,
+  title?: string
+}
+
+function SectionBox({children , id, title}: Props){
+  
   return (
-    <div className='section-box' id={Props.id}>
+    <div className='section-box' id={id}>
         <div className='box'>
             <div className='box__title'>
-                <h1>{Props.title}</h1>
+                <h1>{title}</h1>
             </div>
 
             <div className='box__body'>
-                {Props.children}
+                {children}
             </div>
         </div>
     </div>

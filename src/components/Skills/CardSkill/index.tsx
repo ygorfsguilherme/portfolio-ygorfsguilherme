@@ -1,3 +1,4 @@
+import styled from "styled-components"
 import "./CardSkill.css"
 
 function CardSkill(Props: {img: string}) {

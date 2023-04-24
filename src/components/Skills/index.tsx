@@ -2,6 +2,7 @@ import axios from 'axios'
 import './Skills.css'
 import React, { useEffect, useState } from 'react'
 import CardSkill from './CardSkill'
+import EfectVariants from '../EfectVariants'
 
 function SKills() {
     const [data, setData] = useState({
@@ -20,11 +21,18 @@ function SKills() {
   return (
     <div className='skills'>
     {
-        data.skills.map((item: string) => {
+        data.skills.map((item: string, index) => {
+            const time = index / 15
+
             return (
-                <CardSkill
-                    img={item}
-                />
+                <EfectVariants 
+                    time={time} 
+                    id={index}>
+
+                    <CardSkill
+                        img={item}                 
+                    />
+                </EfectVariants>
             )
         })
     }

@@ -15,14 +15,13 @@ function Works() {
             setData(response.data)
         })
     }, [])
-
-    console.log(data.works)
     
   return (
     <div className='works'>
         {
-            data.works.map((item: any) => {
-                return <CardWork data={item}/>
+            data.works.map((item: any, index) => {
+        
+                return <CardWork id={index} data={item} position={index}/>
             })
         }
     </div>

@@ -1,18 +1,11 @@
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    height: 100%;
-    flex-direction: row-reverse;
-}
-
-.home .profile {
+.profile {
+    box-sizing: border-box;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+    animation: moveRightCenter 1s ease-in-out;
 }
 
-.home .profile img {
+.profile img {
     border: 5px solid var(--color-blue);
     box-shadow: 0 0 15px #2e8aa1;
     background-color: var(--background-box);
@@ -26,7 +19,7 @@
     object-fit: cover;
 }
 
-.home .profile .rede_social {
+.profile .rede_social {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -35,7 +28,7 @@
     margin-top: 20px;
 }
 
-.home .profile .rede_social .rede_social__link {
+.profile .rede_social .rede_social__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,44 +42,64 @@
     height: 40px;
     width: 40px;
     transition: all 0.4s;
+    animation: show 4s ease-in-out;
 }
 
-.home .profile .rede_social .rede_social__link:hover {
+.profile .rede_social .rede_social__link:hover {
     background-color: var(--background-box);
     color: var(--color-blue);
 }
 
-.home .profile .rede_social .rede_social__link:active {
+.profile .rede_social .rede_social__link:active {
     transform: scale(0.9);
 }
 
-.home .about {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-right: 5%;
+@keyframes moveRightCenter {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }    
 }
 
-.home .about blockquote {
-    margin-top: 20px;
+@keyframes moveLeftCenter {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }    
 }
 
-.home .about blockquote cite {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 20px;
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }    
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }    
 }
 
 @media screen and (max-width: 768px) {
-    .home {
-        display: block;
-    }
-    
-    .home .about {
-        padding-right: 0;
-    }
-    
-    .home .profile img {
+    .profile img {
         margin: 0 auto;
     }
 }

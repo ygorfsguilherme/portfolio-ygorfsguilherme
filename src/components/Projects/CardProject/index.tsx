@@ -27,17 +27,6 @@ export function CardProject(
         alt="image project"
       />
 
-      <div className="card__project__button">
-        <a
-          className="card__project__link"
-          target="_blank"
-          href={github_link}
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon icon={faCode} size="1x" />
-        </a>
-      </div>
-
       <div className="card__project__body">
         <FontAwesomeIcon 
           className="card__project__show__description" 
@@ -50,6 +39,17 @@ export function CardProject(
         </h3>
         
         <p>{description}</p>
+      </div>
+
+      <div className="card__project__button">
+        <a
+          className="card__project__link"
+          target="_blank"
+          href={github_link}
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faCode} size="1x" />
+        </a>
       </div>
     </div>
   );
